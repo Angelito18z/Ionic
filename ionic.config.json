@@ -1,0 +1,7 @@
+{
+  "name": "Hola",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
