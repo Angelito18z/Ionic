@@ -1,0 +1,59 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/casa"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Progress</ion-title>
+    <ion-progress-bar type="indeterminate"></ion-progress-bar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Progress</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+    <ion-progress-bar  class="ion-margin-top" class="ion-margin-bottom" type="indeterminate" color="primary"></ion-progress-bar>
+    <ion-progress-bar class="ion-margin-bottom" type="indeterminate" color="secondary"></ion-progress-bar>
+    <ion-progress-bar class="ion-margin-bottom" type="indeterminate" color="tertiary"></ion-progress-bar>
+    <ion-progress-bar class="ion-margin-bottom" type="indeterminate" color="success"></ion-progress-bar>
+    <ion-progress-bar class="ion-margin-bottom" type="indeterminate" color="warning"></ion-progress-bar>
+    <ion-progress-bar class="ion-margin-bottom" type="indeterminate" color="danger"></ion-progress-bar>
+    <ion-progress-bar class="ion-margin-bottom" type="indeterminate" color="light"></ion-progress-bar>
+    <ion-progress-bar class="ion-margin-bottom" type="indeterminate" color="medium"></ion-progress-bar>
+    <ion-progress-bar class="ion-margin-bottom" type="indeterminate" color="dark"></ion-progress-bar>
+    <ion-progress-bar  [buffer]="buffer" [value]="progress"></ion-progress-bar>
+ 
+  
+    <ion-button (click)="showLoading()">Con TS</ion-button>
+
+    <ion-button id="open-loading">Con atributos</ion-button>
+    <ion-loading trigger="open-loading" message="Loading..." [duration]="3000" spinner="circles"></ion-loading>
+  
+    <ion-list>
+      <ion-list-header>
+        <ion-skeleton-text [animated]="true" style="width: 80px"></ion-skeleton-text>
+      </ion-list-header>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <ion-skeleton-text [animated]="true"></ion-skeleton-text>
+        </ion-thumbnail>
+        <ion-label>
+          <h3>
+            <ion-skeleton-text [animated]="true" style="width: 80%;"></ion-skeleton-text>
+          </h3>
+          <p>
+            <ion-skeleton-text [animated]="true" style="width: 60%;"></ion-skeleton-text>
+          </p>
+          <p>
+            <ion-skeleton-text [animated]="true" style="width: 30%;"></ion-skeleton-text>
+          </p>
+        </ion-label>
+      </ion-item>
+    </ion-list> 
+  
+ 
+  
+</ion-content>

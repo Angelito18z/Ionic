@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/casa"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Accordions</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Accordions</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-accordion-group>
+    <ion-accordion value="first">
+      <ion-item slot="header">
+        <ion-label>Acordeon animado</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">Hola</div>
+    </ion-accordion>
+     
+  </ion-accordion-group>
+<ion-accordion-group>
+  <ion-accordion value="first" toggleIcon="caret-down-circle" toggleIconSlot="start">
+    <ion-item slot="header" color="light">
+      <ion-label>Acordeon con icono</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">BUUU!</div>
+  </ion-accordion>
+</ion-accordion-group>
+
+<ion-accordion-group [disabled]="true">
+  <ion-accordion value="first">
+    <ion-item slot="header" color="light">
+      <ion-label>Acordeon bloqueado</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">Imposible q me veas</div>
+  </ion-accordion>
+</ion-accordion-group >
+
+<ion-accordion-group [multiple]="true" >
+  <ion-accordion value="first">
+    <ion-item slot="header" color="light">
+      <ion-label>Acordeon multiple</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">hola</div>
+  </ion-accordion>
+  <ion-accordion value="second">
+    <ion-item slot="header" color="light">
+      <ion-label>Acordeon multiple</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">hola</div>
+  </ion-accordion>
+  <ion-accordion value="third">
+    <ion-item slot="header" color="light">
+      <ion-label>Acordeon multiple</ion-label>
+    </ion-item>
+    <div class="ion-padding" slot="content">hola</div>
+  </ion-accordion>
+</ion-accordion-group>
+
+</ion-content>

@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list> 
+    <ion-item>
+      <ion-input [(ngModel)]="user" label-placement="floating" >
+        <div slot="label">Usuario <ion-text color="danger">(Required)</ion-text></div>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="email" labelPlacement="floating"  type="Email">
+        <div slot="label">Email <ion-text color="danger">(Required)</ion-text></div>
+      </ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input [(ngModel)]="password" labelPlacement="floating"  type="password" [counter]="true" maxlength="8">
+        <div slot="label">Contraseña <ion-text color="danger">(Required)</ion-text></div>
+      </ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button (click)="login()" color="danger" id="open-toast">Guardar</ion-button>
+<ion-text>
+  <a class="ion-margin-top"  routerLink="/registrar" >Registrate</a>
+</ion-text>
+  
+  <ion-img
+  src="https://docs-demo.ionic.io/assets/madison.jpg"
+  alt="The Wisconsin State Capitol building in Madison, WI at night"
+></ion-img>
+
+</ion-content>

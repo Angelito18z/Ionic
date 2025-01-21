@@ -1,0 +1,103 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/casa"></ion-back-button>
+    </ion-buttons>
+    <ion-title>cards</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Cards</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="data:image/jpeg;base64,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" />
+          </ion-thumbnail>
+          <ion-label>Robbie</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj28q3tRLhf1uSV10RRrFUIiONSaIpZkT7Hw&s" />
+          </ion-thumbnail>
+          <ion-label>Stingy</ion-label>
+        </ion-item>
+  
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4YJxVhOVWSgSx3IDUbmztE584fTGUbNLruiiNHlf2axTaCfMpqu7ShE7v9NN8KJSSmE&usqp=CAU" />
+          </ion-thumbnail>
+          <ion-label>Bonilla</ion-label>
+        </ion-item>
+  
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/thumbnail.svg" />
+          </ion-thumbnail>
+          <ion-label>Item</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  
+  </ion-card>
+  
+  <ion-card color="tertiary">
+    <ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content> Card Content </ion-card-content>
+  </ion-card>
+  
+  <ion-card color="success">
+    <ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content> Card Content </ion-card-content>
+  </ion-card>
+  
+  <ion-card color="warning">
+    <ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content> Card Content </ion-card-content>
+  </ion-card>
+  
+  <ion-card color="danger">
+    <ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content> Card Content </ion-card-content>
+  </ion-card>
+  
+  
+  <ion-card color="dark">
+    <ion-card-header>
+      <ion-card-title>Card Title</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content> Card Content </ion-card-content>
+  </ion-card>
+
+
+</ion-content>

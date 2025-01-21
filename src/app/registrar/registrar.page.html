@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registrar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Registrar</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-list> 
+    <ion-item>
+      <ion-input [(ngModel)]="user" label-placement="floating" >
+        <div slot="label">Usuario <ion-text color="danger">(Required)</ion-text></div>
+      </ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-input [(ngModel)]="email" labelPlacement="floating"  type="Email">
+        <div slot="label">Email <ion-text color="danger">(Required)</ion-text></div>
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input [(ngModel)]="password" labelPlacement="floating"  type="password" [counter]="true" maxlength="8">
+        <div slot="label">Contraseña <ion-text color="danger">(Required)</ion-text></div>
+      </ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input [(ngModel)]="password" labelPlacement="floating"  type="password" [counter]="true" maxlength="8">
+        <div slot="label">Confirmar contraseña <ion-text color="danger">(Required)</ion-text></div>
+      </ion-input>
+    </ion-item>
+
+  </ion-list>
+  <ion-button (click)="registrar()" color="danger" id="open-toast">Registrar</ion-button>
+
+</ion-content>

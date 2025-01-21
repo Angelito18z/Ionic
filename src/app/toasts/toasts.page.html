@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Toasts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Toasts</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-button class="ion-margin-top"  (click)="presentToast('top')">Notificacion arriba</ion-button>
+<ion-button  (click)="presentToast('middle')">Notificacion en medio</ion-button>
+<ion-button   (click)="presentToast('bottom')">Notificacion abajo</ion-button>
+
+
+<ion-button id="open-toast">Notificacion con icon</ion-button>
+<ion-toast trigger="open-toast" message="HOLAAAAAAAAA" [duration]="3000" icon="globe"></ion-toast>
+</ion-content>
