@@ -1,2 +1,76 @@
-// For information on how to create your own theme, please see:
-// http://ionicframework.com/docs/theming/
+// Archivo: variables.scss
+// Tema: Colores Pastel para Ionic
+
+:root {
+    // Colores primarios de Ionic
+    --ion-color-primary: #ffd1dc; /* Rosa pastel */
+    --ion-color-primary-rgb: 255, 209, 220;
+    --ion-color-primary-contrast: #333333; /* Contraste oscuro */
+    --ion-color-primary-contrast-rgb: 51, 51, 51;
+    --ion-color-primary-shade: #e4bac7; /* Sombra */
+    --ion-color-primary-tint: #ffe4eb; /* Tono */
+  
+    --ion-color-secondary: #b5e2fa; /* Azul pastel */
+    --ion-color-secondary-rgb: 181, 226, 250;
+    --ion-color-secondary-contrast: #333333;
+    --ion-color-secondary-contrast-rgb: 51, 51, 51;
+    --ion-color-secondary-shade: #9fcce3;
+    --ion-color-secondary-tint: #c9ecfb;
+  
+    --ion-color-tertiary: #fdfd96; /* Amarillo pastel */
+    --ion-color-tertiary-rgb: 253, 253, 150;
+    --ion-color-tertiary-contrast: #333333;
+    --ion-color-tertiary-contrast-rgb: 51, 51, 51;
+    --ion-color-tertiary-shade: #e3e383;
+    --ion-color-tertiary-tint: #fefeaa;
+  
+    --ion-color-success: #b9fbc0; /* Verde pastel */
+    --ion-color-success-rgb: 185, 251, 192;
+    --ion-color-success-contrast: #333333;
+    --ion-color-success-contrast-rgb: 51, 51, 51;
+    --ion-color-success-shade: #a4e5aa;
+    --ion-color-success-tint: #c9fccf;
+  
+    --ion-color-warning: #ffdac1; /* Melocotón pastel */
+    --ion-color-warning-rgb: 255, 218, 193;
+    --ion-color-warning-contrast: #333333;
+    --ion-color-warning-contrast-rgb: 51, 51, 51;
+    --ion-color-warning-shade: #e4c3ad;
+    --ion-color-warning-tint: #ffdfcb;
+  
+    --ion-color-danger: #f5b2b2; /* Rojo pastel */
+    --ion-color-danger-rgb: 245, 178, 178;
+    --ion-color-danger-contrast: #333333;
+    --ion-color-danger-contrast-rgb: 51, 51, 51;
+    --ion-color-danger-shade: #d99f9f;
+    --ion-color-danger-tint: #f7c3c3;
+  
+    --ion-color-light: #f9f9f9; /* Gris muy claro */
+    --ion-color-light-rgb: 249, 249, 249;
+    --ion-color-light-contrast: #333333;
+    --ion-color-light-contrast-rgb: 51, 51, 51;
+    --ion-color-light-shade: #e0e0e0;
+    --ion-color-light-tint: #ffffff;
+  
+    --ion-color-medium: #e0e0e0; /* Gris suave */
+    --ion-color-medium-rgb: 224, 224, 224;
+    --ion-color-medium-contrast: #333333;
+    --ion-color-medium-contrast-rgb: 51, 51, 51;
+    --ion-color-medium-shade: #c7c7c7;
+    --ion-color-medium-tint: #ebebeb;
+  
+    --ion-color-dark: #a0a0a0; /* Gris oscuro */
+    --ion-color-dark-rgb: 160, 160, 160;
+    --ion-color-dark-contrast: #ffffff;
+    --ion-color-dark-contrast-rgb: 255, 255, 255;
+    --ion-color-dark-shade: #8b8b8b;
+    --ion-color-dark-tint: #b3b3b3;
+  
+    --ion-color-info: #c9c9ff; /* Lila pastel */
+    --ion-color-info-rgb: 201, 201, 255;
+    --ion-color-info-contrast: #333333;
+    --ion-color-info-contrast-rgb: 51, 51, 51;
+    --ion-color-info-shade: #aeaeec;
+    --ion-color-info-tint: #d5d5ff;
+  }
+  

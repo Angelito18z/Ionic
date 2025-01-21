@@ -14,32 +14,38 @@
     </ion-toolbar>
   </ion-header>
 
-  <ion-list> 
+<form (ngSubmit)="registrar(registerForm)" #registerForm="ngForm">
+  <ion-list>
+    
     <ion-item>
-      <ion-input [(ngModel)]="user" label-placement="floating" >
-        <div slot="label">Usuario <ion-text color="danger">(Required)</ion-text></div>
+      <ion-input 
+      fill="solid" label-placement="floating" name="user" required [(ngModel)]="user"  >
+        <div slot="label">Usuario <ion-text color="danger">(Obligatorio)</ion-text></div>
       </ion-input>
     </ion-item>
     
     <ion-item>
-      <ion-input [(ngModel)]="email" labelPlacement="floating"  type="Email">
-        <div slot="label">Email <ion-text color="danger">(Required)</ion-text></div>
+      <ion-input
+      fill="solid" label-placement="floating" name="email" required [(ngModel)]="email"  >
+      <div slot="label">Correo Electrónico <ion-text color="danger">(Obligatorio)</ion-text></div>
+  </ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-input  fill="solid" name="password" required [(ngModel)]="password" labelPlacement="floating"  type="password" [counter]="true" maxlength="8">
+        <div slot="label">Contraseña <ion-text color="danger">(Obligatorio)</ion-text></div>
       </ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-input [(ngModel)]="password" labelPlacement="floating"  type="password" [counter]="true" maxlength="8">
-        <div slot="label">Contraseña <ion-text color="danger">(Required)</ion-text></div>
+      <ion-input  fill="solid" name="confirmPassword" required [(ngModel)]="confirmPassword" labelPlacement="floating"  type="password" [counter]="true" maxlength="8">
+        <div slot="label">Confirmar contraseña <ion-text color="danger">(Obligatorio)</ion-text></div>
       </ion-input>
     </ion-item>
-
-    <ion-item>
-      <ion-input [(ngModel)]="password" labelPlacement="floating"  type="password" [counter]="true" maxlength="8">
-        <div slot="label">Confirmar contraseña <ion-text color="danger">(Required)</ion-text></div>
-      </ion-input>
-    </ion-item>
-
   </ion-list>
-  <ion-button (click)="registrar()" color="danger" id="open-toast">Registrar</ion-button>
+  <ion-button type="submit"  color="danger" id="open-toast">Registrar</ion-button>
+
+</form>
+
 
 </ion-content>
